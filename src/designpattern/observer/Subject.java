@@ -9,7 +9,7 @@ import java.util.List;
  * @author liu yuning
  *
  */
-public abstract class Subject {
+public class Subject {
     private List<Observer> observers = new ArrayList<Observer>();
 
     public void attach(Observer observer) {

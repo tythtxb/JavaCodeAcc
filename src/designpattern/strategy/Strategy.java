@@ -8,9 +8,15 @@ package designpattern.strategy;
  */
 public interface Strategy {
     public void algorithmInterface();
+
 }
 
 class ConcreteStrategyA implements Strategy {
+    public Integer type=1;
+
+    public Integer getType() {
+        return type;
+    }
 
     @Override
     public void algorithmInterface() {
@@ -20,6 +26,11 @@ class ConcreteStrategyA implements Strategy {
 }
 
 class ConcreteStrategyB implements Strategy {
+    public Integer type=2;
+
+    public Integer getType() {
+        return type;
+    }
 
     @Override
     public void algorithmInterface() {
@@ -29,6 +40,11 @@ class ConcreteStrategyB implements Strategy {
 }
 
 class ConcreteStrategyC implements Strategy {
+    public Integer type=3;
+
+    public Integer getType() {
+        return type;
+    }
 
     @Override
     public void algorithmInterface() {

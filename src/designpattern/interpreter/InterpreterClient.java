@@ -22,7 +22,7 @@ public class InterpreterClient {
 	for (AbstractExpression expression : list) {
 	    expression.interpret(context);
 	}
-
+		System.out.println(context.getOutput());
     }
 
 }

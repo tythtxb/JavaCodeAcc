@@ -10,6 +10,15 @@ public class Context {
 
     private String input;
     private String output;
+    private Boolean isOnline;
+
+    public Boolean getOnline() {
+        return isOnline;
+    }
+
+    public void setOnline(Boolean online) {
+        isOnline = online;
+    }
 
     public String getInput() {
 	return input;
