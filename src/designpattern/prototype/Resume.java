@@ -43,14 +43,12 @@ public class Resume implements Cloneable, Serializable {
     // 通过对象序列化，实现深度拷贝
     public Object deepClone() throws IOException, ClassNotFoundException {
 	// 将对象写入流内
-	ByteArrayOutputStream bos = new ByteArrayOutputStream();
-	ObjectOutputStream oos = new ObjectOutputStream(bos);
-	oos.writeObject(this);
-
-	// 从流内读出对象
-	ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(
-		bos.toByteArray()));
-	return ois.readObject();
+        ByteArrayOutputStream bos = new ByteArrayOutputStream();
+        ObjectOutputStream oos = new ObjectOutputStream(bos);
+        oos.writeObject(this);
+        // 从流内读出对象
+        ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(bos.toByteArray()));
+        return ois.readObject();
 
     }
 

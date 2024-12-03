@@ -7,25 +7,33 @@ package designpattern.flyweight;
  *
  */
 public abstract class FlyWeight {
-
+    protected String name;
     public abstract void operation(int extrinsicState);
 
 }
 
 class ConcreteFlyWeight extends FlyWeight {
 
+    public ConcreteFlyWeight(String name){
+        System.out.println("初始化"+name);
+        super.name=name;
+    }
     @Override
     public void operation(int extrinsicState) {
-	System.out.println("具体FlyWeight：" + extrinsicState);
+	System.out.println(name+"具体FlyWeight：" + extrinsicState);
     }
 
 }
 
 class UnsharedConcreteFlyWeight extends FlyWeight {
 
+    public UnsharedConcreteFlyWeight(String name){
+        System.out.println("初始化"+name);
+        super.name=name;
+    }
     @Override
     public void operation(int extrinsicState) {
-	System.out.println("不共享的具体FlyWeight：" + extrinsicState);
+	System.out.println(name+"不共享的具体FlyWeight：" + extrinsicState);
     }
 
 }

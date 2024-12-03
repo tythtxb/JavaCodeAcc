@@ -1,7 +1,7 @@
 package designpattern.composite;
 
 /**
- * 客户端。通过Component接口操作组合部件的对象
+ * 组合模式：用于处理树形结构，将单个对象和组合对象统一处理。
  * 
  * @author liu yuning
  *

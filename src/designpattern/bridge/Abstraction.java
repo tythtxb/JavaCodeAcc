@@ -17,10 +17,7 @@ public abstract class Abstraction {
 	this.implementor = implementor;
     }
 
-    public void operation() {
-	System.out.print("Abstraction-" + this.getName() + ": ");
-	implementor.operation();
-    }
+    public abstract void operation();
 
     public String getName() {
 	return name;
@@ -39,7 +36,8 @@ class AbstractionA extends Abstraction {
 
     @Override
     public void operation() {
-	super.operation();
+        System.out.print("AbstractionA-" + this.getName() + ": ");
+        this.implementor.operation();
     }
 
 }
@@ -52,7 +50,8 @@ class AbstractionB extends Abstraction {
 
     @Override
     public void operation() {
-	super.operation();
+        System.out.print("AbstractionB-" + this.getName() + ": ");
+        this.implementor.operation();
     }
 
 }

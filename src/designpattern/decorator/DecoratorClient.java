@@ -1,7 +1,7 @@
 package designpattern.decorator;
 
 /**
- * 装饰模式客户端调用代码，装饰的过程更像是层层包装，用前面的对象装饰后面的对象
+ * 用于动态地给对象添加额外的职责，增强功能，不改变原有对象。
  * 
  * @author liu yuning
  *

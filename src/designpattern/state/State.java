@@ -11,6 +11,9 @@ public abstract class State {
 
 }
 
+/**
+ * 不同的状态做不同的事，并且控制状态流转
+ */
 class ConcreteStateA extends State {
 
     @Override

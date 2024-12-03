@@ -6,7 +6,7 @@ package designpattern.decorator;
  * @author liu yuning
  *
  */
-public class ConcreteComponent extends Component {
+public class ConcreteComponent implements Component {
 
     @Override
     public void operation() {

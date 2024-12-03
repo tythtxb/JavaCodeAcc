@@ -1,7 +1,7 @@
 package designpattern.bridge;
 
 /**
- * 客户端
+ *  用于解耦抽象与实现，使其独立变化，通常用于需要支持多维度变化的场景。
  * 
  * @author liu yuning
  *

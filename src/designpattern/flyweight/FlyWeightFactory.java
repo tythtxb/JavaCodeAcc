@@ -13,7 +13,7 @@ public class FlyWeightFactory {
 
     public FlyWeight getFlyWeight(String key) {
 	if (!flyWeights.containsKey(key)) {
-	    flyWeights.put(key, new ConcreteFlyWeight());
+	    flyWeights.put(key, new ConcreteFlyWeight(key));
 	}
 
 	return flyWeights.get(key);

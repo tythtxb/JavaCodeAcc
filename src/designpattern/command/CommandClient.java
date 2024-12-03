@@ -26,7 +26,7 @@ public class CommandClient {
 	recievers.remove(0);
 	invoker.setCommand(command);
 	invoker.executeCommand();
-		//command.execute();
+		command.execute();
 
     }
 

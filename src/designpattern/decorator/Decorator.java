@@ -7,7 +7,7 @@ package designpattern.decorator;
  * @author liu yuning
  *
  */
-public abstract class Decorator extends Component {
+public class Decorator implements Component {
     protected Component component;
 
     public Component getComponent() {

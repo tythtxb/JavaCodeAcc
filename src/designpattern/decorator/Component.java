@@ -6,6 +6,6 @@ package designpattern.decorator;
  * @author liu yuning
  *
  */
-public abstract class Component {
-    public abstract void operation();
+public  interface  Component {
+    public  void operation();
 }
